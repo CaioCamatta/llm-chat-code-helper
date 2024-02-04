@@ -31,3 +31,5 @@ File: ./src/compiler.c
 ```
 
 After running the script, I go on ChatGPT and give it a prompt such as "I am doing \<brief description of my project\>. Add unit tests to this function `functionABC`. Here's all my code: \<paste output from script\>".
+
+You can also use ChatGPT's "Custom Instructions" to tell the LLM to show you what lines it's changing with something like "For each file that needs to be changed, write out the changes similar to a unified diff like `diff -U0`".
