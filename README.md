@@ -5,7 +5,7 @@ Naturally, this only works for small repositories due to token limits. If you ha
 
 I created this script because I wanted to make use of GPT-4 Turbo's longer token limit to help me with a small side project. Also, I already had a ChatGPT Plus subscription so I didn't want to pay for API calls (which can be expensive when you're pasting your entire codebase into the prompt). It's an alternative to Copilot; I found GPT-4 Turbo to be much better at writing big chunks of code than Copilot.
 
-The script in `./chat` is currently set up to copy all `.h`, `.c`, and `.md` files. Just modify it to fit your project.
+The script in `./copy_code` is currently set up to copy all `.h`, `.c`, and `.md` files in the current folder. To use it, just paste it into one of you repos and modify it to use whatever file extensions you have in your project.
 
 Here's an example of the output
 
