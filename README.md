@@ -30,4 +30,4 @@ File: ./src/compiler.c
 \`\`\`
 ```
 
-After running the scrip, what I do is go on ChatGPT and give it a prompt such as "I am doing \<brief description of my project\>. Add unit tests to this function `functionABC`. Here's all my code: \<paste output from script\>"
+After running the script, I go on ChatGPT and give it a prompt such as "I am doing \<brief description of my project\>. Add unit tests to this function `functionABC`. Here's all my code: \<paste output from script\>".
