@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Find all .c and .h files in the current directory
+files=$(find . -type f \( -name "*.c" -o -name "*.h" -o -name "*.md" \))
+
+# Get the current directory
+current_dir=$(pwd)
+
+# Initialize a variable to store the content
+content=""
+
+# Loop through each file and append its relative path, name, and content to the variable
+for file in $files; do
+    # Calculate the relative path
+    relative_path="${file#"$current_dir"/}"
+
+    content+="File: $relative_path\n"
+    content+="\`\`\`\n"
+
+    # Loop through each line in the file and append line numbers along with content
+    line_number=1
+    while IFS= read -r line; do
+        content+="$line_number: $line\n"
+        ((line_number++))
+    done < "$file"
+
+    content+="\`\`\`\n\n"
+done
+
+# Copy the content to the clipboard using pbcopy
+echo -e "$content" | pbcopy
+
+# Print a message indicating that the content has been copied
+echo "Content has been copied to the clipboard."
+
