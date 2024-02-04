@@ -1,5 +1,5 @@
 # llm-chat-code-helper
-This script copies all the code in the current directory into your clipboard so you can paste it into ChatGPT (or your LLM of choice) and ask it to make changes to it.
+This Shell script copies all the code in the current directory into your clipboard so you can paste it into ChatGPT (or your LLM of choice) and ask it to make changes to it.
 
 Naturally, this only works for small repositories due to token limits. If you have a big repository, you can modify this script so it only copies the most relevant files.
 
